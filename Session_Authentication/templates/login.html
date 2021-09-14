@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+<form method="POST" action="/loginuser/">
+    {% csrf_token %}
+    <h2>Provide Your Credentials Details here..</h2>
+    <table>
+        <tr>
+            <th>Username : </th>
+            <td><input type="text" name="uname"></td>
+        </tr>
+        <tr>
+            <th>Password : </th>
+            <td><input type="password" name="pwd"></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><input type="submit" name="Login"></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
